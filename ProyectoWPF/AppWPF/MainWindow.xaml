@@ -1,0 +1,29 @@
+﻿<Window x:Class="AppWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView HorizontalAlignment="Left" Height="238" Margin="14,134,0,0" VerticalAlignment="Top" Width="552" SelectionChanged="ListView_SelectionChanged_1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header=""/>
+                    <GridViewColumn Header="Etag"/>
+                    <GridViewColumn Header="Codigo Aerolinea"/>
+                    <GridViewColumn Header="Nombre"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Buscar Aerolinea" HorizontalAlignment="Left" Margin="196,10,0,0" VerticalAlignment="Top" Width="150" Height="23"/>
+        <Button Content="API" HorizontalAlignment="Left" Margin="648,376,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="14,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="14,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="63,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
+        <Label Content="Codigo" HorizontalAlignment="Left" Margin="14,40,0,0" VerticalAlignment="Top"/>
+        <Button Content="Crear Aerolinea" HorizontalAlignment="Left" Margin="196,66,0,0" VerticalAlignment="Top" Width="150" Height="23"/>
+
+    </Grid>
+</Window>
